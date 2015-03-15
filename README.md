@@ -1,5 +1,5 @@
 ## JEB App
-The project provides an OS X app bundle for the JEB decompiler. It does NOT contain the JEB itself. Before using it, you may need to get a copy of the JEB from PNF Software: [https://www.pnfsoftware.com/]().
+The project provides an OS X app bundle for the JEB decompiler. It does NOT contain the JEB itself. Before using it, you may need to get a copy of the JEB from PNF Software: [https://www.pnfsoftware.com/](https://www.pnfsoftware.com/).
 
 ### How to Use
 __Step 1.__ Clone this project to your Mac
