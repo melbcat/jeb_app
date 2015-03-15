@@ -12,15 +12,17 @@ For example, if your JEB is placed at `~/bin/jeb` directory, execute:
   $ ln -s ~/bin/jeb JEB.app/Contents/Resources/Java
   ```
 
-__Step 3.__ Config Java runtime version
+__Step 3.__ Set Java runtime version
 
-Java 6 user can do nothing. If you are using Java 7, 
+Java 6 user can skip this step. 
+
+If you are using Java 7, 
 
   ```
   $ vim JEB.app/Contents/Info.plist
   ```
 
-Then change value of the key `JVMVersion` from `1.6+` to `1.7+`.
+then change value of the key `JVMVersion` from `1.6+` to `1.7+`.
 
 __Step 4.__ (_Optional_) Customize JVM options
 
@@ -28,7 +30,7 @@ These options are defined by the key `VMOptions` in the `JEB.app/Contents/Info.p
 
 __Step 5.__ (_Optional_) Customize the icon
 
-Place your favorite icon (in Apple's .icns format) to `JEB.app/Contents/Resources/jeb.icns`. The default icon is converted from the newest official one (which is ugly indeed). An old official icon is also privided as `jeb_old.icns` in the same directory for your convenience. Note that after JEB launched, its icon on the docker will still changed to the official embedded one. You can hacks the `$JEB_ROOT/bin/jeb.jar` by yourself (hint: change PNG files in `assets` directory).
+Place your favorite icon (in Apple's .icns format) to `JEB.app/Contents/Resources/jeb.icns`. The default icon is converted from the newest official one (which is ugly indeed). An old official icon is also privided as `jeb_old.icns` in the same directory for your convenience. Note that after being launched, JEB's icon on the dock will still changes to the official embedded one. You can hacks the `$JEB_ROOT/bin/jeb.jar` by yourself (hint: change .png files in `assets` directory).
 
 __Step 6.__ Copy the `JEB.app` to your `/Applications/` and enjoy it.
 
